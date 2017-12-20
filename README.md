@@ -1,5 +1,5 @@
 # gtts
-Gtts client library for converting text to speech. 
+Gtts client library for converting text to speech by using the Google Translate API.
 
 ### Installation
 ``` bash
