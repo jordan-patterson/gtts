@@ -14,7 +14,8 @@ $ go get github.com/jordan-patterson/gtts
     "github.com/jordan-patterson/gtts"
  )
  func main() {
-    converter=gtts.Gtts{Text:"To infinity and beyond",Lang:"en"}
+    converter := gtts.Gtts{Text:"To infinity and beyond",Lang:"en"}
+    
     //now save to mp3 file
     converter.Save("speech.mp3")
  }
