@@ -1,4 +1,4 @@
-package gtts
+package main
 
 import (
 	"fmt"
@@ -8,8 +8,8 @@ import (
 	"io/ioutil"
 )
 type Gtts struct{
-	text string
-	lang string
+	Text string
+	Lang string
 }
 func (tts *Gtts) Get() ([]byte,error){
 	//prepare text so it can be placed in query
@@ -47,6 +47,6 @@ func (tts *Gtts) Save(filename string) (error){
 return nil
 }
 func main(){
-	gtts:=Gtts{"This is a test","en"}
+	gtts:=Gtts{Text:"This is a test",Lang:"en",}
 	gtts.Save("test.mp3")
 }
