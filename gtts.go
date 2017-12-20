@@ -13,8 +13,8 @@ type Gtts struct{
 }
 func (tts *Gtts) Get() ([]byte,error){
 	//prepare text so it can be placed in query
-	tts.text=url.QueryEscape(tts.text)
-	url:=fmt.Sprintf("http://translate.google.com/translate_tts?ie=UTF-8&q=%s&tl=%s&client=gtx",tts.text,tts.lang)
+	tts.Text=url.QueryEscape(tts.Text)
+	url:=fmt.Sprintf("http://translate.google.com/translate_tts?ie=UTF-8&q=%s&tl=%s&client=gtx",tts.Text,tts.Lang)
 	
 	//do the request
 	resp,err:=http.Get(url)
